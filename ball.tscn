@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://f62e3olgdhj0"]
+
+[ext_resource type="ArrayMesh" uid="uid://dws3w6n50kh2t" path="res://assets/ball-blue.glb" id="1_x8fbi"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_wyfhi"]
+
+[node name="ball" type="RigidBody3D" unique_id=1085334154]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1393275885]
+shape = SubResource("SphereShape3D_wyfhi")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CollisionShape3D" unique_id=1542053654]
+mesh = ExtResource("1_x8fbi")
